@@ -35,18 +35,18 @@ void loop() {
   Serial.print("cm");
   Serial.println();
   
-  if(inches<10){
+  if(inches<10) {
     digitalWrite(red,HIGH);
     digitalWrite(green,LOW);
     digitalWrite(blue,LOW);
   }
-  else if (inches>10 && inches<50){
+  else if (inches>10 && inches<50) {
     digitalWrite(red,LOW);
     digitalWrite(green,LOW);
     digitalWrite(blue,HIGH); 
   }
   
-  else{ 
+  else { 
     digitalWrite(red,LOW);
     digitalWrite(green,HIGH);
     digitalWrite(blue,LOW); 
@@ -62,8 +62,7 @@ long microsecondsToCentimeters(long microseconds) {
   return microseconds / 29 / 2;
 }
   {
-  if(digitalRead(2) == HIGH)
-  {
+  if(digitalRead(2) == HIGH) {
     digitalWrite(3, HIGH);
     digitalWrite(4, LOW);
     delay(50);
