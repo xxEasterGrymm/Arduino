@@ -12,6 +12,7 @@ void setup() {
   Serial.println("Ultrasonic Sensor HC-SR04 Test"); // print some text in Serial Monitor
   Serial.println("with Arduino UNO R3");
 }
+
 void loop() {
   // Clears the trigPin condition
   digitalWrite(trigPin, LOW);
